@@ -41,6 +41,7 @@ body {
 #center-col {
     width: 20%;
     position: relative;
+    max-height: 93%;
 }
 
 #img-desc {
@@ -64,14 +65,10 @@ body {
 
 
 #right-col {
-    display: inline-block;
     width: 50%;
     padding-top: 98px;
-
 }
 
-
 #front-img {
-    display: block;
-    height: 60%;
+    height: 100%;
 }
