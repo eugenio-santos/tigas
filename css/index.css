@@ -12,9 +12,12 @@ body {
   display: flex;
 }
 
+#padding-col {
+  width: 20%;
+}
+
 #left-col {
-  width: 30%;
-  padding-left: 25%;
+  width: 10%;
 }
 
 .menu-link {
