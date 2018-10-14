@@ -1,5 +1,5 @@
 function run() {
-  var rightCol = document.getElementById('right-col');
+  /*var rightCol = document.getElementById('right-col');
 
   rightCol.style.height = window.innerHeight / 1.5 + "px";
 
@@ -20,7 +20,6 @@ function run() {
       obj.addEventListener(type, func);
     };
 
-    /* init - you can init any event */
     throttle("resize", "optimizedResize");
   })();
 
@@ -29,6 +28,7 @@ function run() {
     rightCol.style.height = window.innerHeight / 1.5 + "px";
     console.log(rightCol.style.height);
   });
+  */
 }
 
 if (document.readyState != 'loading') run();
