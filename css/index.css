@@ -8,15 +8,6 @@ body {
   box-sizing: border-box;
 }
 
-p,
-a {
-  font-family: "Open Sans", sans-serif;
-}
-
-#desc-senc {
-  font-family: "Roboto", sans-serif;
-}
-
 #root {
   display: flex;
 }
@@ -45,6 +36,7 @@ a {
 #center-col {
   width: 20%;
   position: relative;
+  max-height: 93%;
 }
 
 #img-desc {
@@ -68,17 +60,12 @@ a {
 
 #right-col {
   width: 50%;
-  height: 60vh;
+  padding-top: 98px;
+  height: 70vh;
 }
 
 #front-img {
   height: 100%;
-}
-
-#canvas {
-  width: 70%;
-  display: flex;
-  padding-top: 98px;
 }
 
 /*# sourceMappingURL=index.css.map */
