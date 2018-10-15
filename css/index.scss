@@ -1,109 +1,125 @@
 body {
-  background-color: rgb(255, 238, 236);
-  margin: 0;
-  margin-top: 5%;
+    background-color: rgb(255, 238, 236);
+    margin: 0;
+    margin-top: 5%;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p,
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#front-desc {
+    font-family: 'Roboto', sans-serif;
 }
 
 #root {
-  display: flex;
+    display: flex;
 }
 
 #padding-col {
-  width: 20%;
+    width: 20%;
 }
 
 #left-col {
-  width: 10%; //padding-left: 25%;
+    width: 10%; //padding-left: 25%;
 }
 
 #logo,
 #menu {}
 
 .menu-link {
-  color: #B9B9B9;
-  display: block;
-  padding-left: 10px;
-  padding-top: 15px;
-  text-decoration: none;
-  font-size: 13px;
+    color: #B9B9B9;
+    display: block;
+    padding-left: 10px;
+    padding-top: 15px;
+    text-decoration: none;
+    font-size: 13px;
 }
 
 .menu-link:hover {
-  color: black;
+    color: black;
 }
 
 #center-col {
-  width: 20%;
-  position: relative;
-  max-height: 93%;
+    width: 20%;
+    position: relative;
+    max-height: 93%;
 }
 
 #img-desc {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding-right: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 5px;
 }
 
 #img-desc p {
-  margin: 0;
-  font-size: 13px;
+    margin: 0;
+    font-size: 13px;
 }
 
 #mobile-img-desc {
-  display: none;
+    display: none;
 }
 
 #front-title {
-  text-align: right;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 18px !important;
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px !important;
 }
 
 #right-col {
-  width: 50%;
-  padding-top: 98px;
-  height: 70vh;
+    width: 50%;
+    padding-top: 98px;
+    height: 70vh;
 }
 
 #front-img {
-  height: 100%;
+    height: 100%;
 }
 
 @media only screen and (max-width: 500px) {
-  body {
-    margin: 0;
-  }
-  #root {
-    display: block;
-    width: 100%;
-  }
-  #left-col {
-    width: 100%;
-  }
-  #center-col {
-    display: none;
-  }
-  #menu {
-    display: none;
-  }
-  #right-col {
-    width: 100%;
-    padding-top: 0px;
-    height: auto;
-  }
-  #mobile-img-desc {
-    display: block;
-  }
-  #front-img {
-    display: block;
-    width: 100%;
-    height: auto;
-    margin: auto;
-  }
+    body {
+        margin: 0;
+    }
+
+    #root {
+        display: block;
+        width: 100%;
+    }
+
+    #left-col {
+        width: 100%;
+    }
+
+    #center-col {
+        display: none;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #right-col {
+        width: 100%;
+        padding-top: 0px;
+        height: auto;
+    }
+
+    #mobile-img-desc {
+        display: block;
+    }
+
+    #front-img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
 }
