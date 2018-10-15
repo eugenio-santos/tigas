@@ -103,6 +103,11 @@ body {
   #mobile-img-desc {
     display: block;
   }
+
+  #front-img {
+    width: 100%;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
