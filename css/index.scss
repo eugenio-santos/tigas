@@ -9,6 +9,15 @@ body {
     box-sizing: border-box;
 }
 
+p,
+a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#desc-senc {
+    font-family: 'Roboto', sans-serif;
+}
+
 #root {
     display: flex;
 }
@@ -41,7 +50,6 @@ body {
 #center-col {
     width: 20%;
     position: relative;
-    max-height: 93%;
 }
 
 #img-desc {
@@ -66,10 +74,15 @@ body {
 
 #right-col {
     width: 50%;
-    padding-top: 98px;
-    height: 70vh;
+    height: 60vh;
 }
 
 #front-img {
     height: 100%;
+}
+
+#canvas {
+    width: 70%;
+    display: flex;
+    padding-top: 98px;
 }
