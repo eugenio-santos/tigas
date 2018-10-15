@@ -51,6 +51,10 @@ body {
   font-size: 13px;
 }
 
+#mobile-img-desc {
+  display: none;
+}
+
 #front-title {
   text-align: right;
   font-style: italic;
@@ -66,6 +70,39 @@ body {
 
 #front-img {
   height: 100%;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    margin: 0;
+  }
+
+  #root {
+    display: block;
+    width: 100%;
+  }
+
+  #left-col {
+    width: 100%;
+  }
+
+  #center-col {
+    display: none;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  #right-col {
+    width: 100%;
+    padding-top: 0px;
+    height: auto;
+  }
+
+  #mobile-img-desc {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
