@@ -29,17 +29,22 @@ a {
   width: 10%;
 }
 
+#menu {
+  margin-left: 10px;
+}
+
 .menu-link {
   color: #B9B9B9;
-  display: block;
-  padding-left: 10px;
+  display: list-item;
   padding-top: 15px;
   text-decoration: none;
   font-size: 11px;
+  list-style: none;
 }
 
 .menu-link:hover {
   color: black;
+  list-style: malayalam;
 }
 
 #center-col {
