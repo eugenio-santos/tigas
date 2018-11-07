@@ -1,34 +1,32 @@
 function run() {
-  /*var rightCol = document.getElementById('right-col');
-
-  rightCol.style.height = window.innerHeight / 1.5 + "px";
-
-  (function () {
-    var throttle = function (type, name, obj) {
-      obj = obj || window;
-      var running = false;
-      var func = function () {
-        if (running) {
-          return;
-        }
-        running = true;
-        requestAnimationFrame(function () {
-          obj.dispatchEvent(new CustomEvent(name));
-          running = false;
-        });
-      };
-      obj.addEventListener(type, func);
+  function getAjax(url, success) {
+    var xhr = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+    xhr.open('GET', url);
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState > 3 && xhr.status == 200) success(xhr.responseText);
     };
+    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+    xhr.send();
+    return xhr;
+  }
 
-    throttle("resize", "optimizedResize");
-  })();
 
-  // handle event
-  window.addEventListener("optimizedResize", function () {
-    rightCol.style.height = window.innerHeight / 1.5 + "px";
-    console.log(rightCol.style.height);
-  });
-  */
+
+  window.onhashchange = function (event) {
+    console.log(location.hash, event);
+    if (location.hash === '') {
+      document.getElementById('center-col').style.display = 'block';
+      document.getElementById('right-col').style.display = 'block';
+    }
+    if (location.hash === '#photo') {
+      document.getElementById('center-col').style.display = 'none';
+      document.getElementById('right-col').style.display = 'none';
+      getAjax('./t.html', function (data) {
+        console.log(data);
+
+      })
+    }
+  };
 }
 
 if (document.readyState != 'loading') run();
