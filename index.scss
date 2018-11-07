@@ -1,5 +1,5 @@
 body {
-  background-color: #ffeeec;
+  background-color: rgb(255, 238, 236);
   margin: 0;
   margin-top: 5%;
 }
@@ -10,11 +10,11 @@ body {
 
 p,
 a {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #front-desc {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 #root {
@@ -26,7 +26,7 @@ a {
 }
 
 #left-col {
-  width: 10%;
+  width: 10%; //padding-left: 25%;
 }
 
 #menu {
@@ -36,7 +36,7 @@ a {
 .menu-link {
   color: #B9B9B9;
   display: list-item;
-  padding-top: 15px;
+  padding-top: 15px; //padding-left: 10px;
   text-decoration: none;
   font-size: 11px;
   list-style: none;
@@ -86,38 +86,36 @@ a {
   height: 100%;
 }
 
+#nav-div {
+  display: none;
+  width: 70%;
+}
+
 @media only screen and (max-width: 500px) {
   body {
     margin: 0;
   }
-
   #root {
     display: block;
     width: 100%;
   }
-
   #left-col {
     width: 100%;
   }
-
   #center-col {
     display: none;
   }
-
   #menu {
     display: none;
   }
-
   #right-col {
     width: 100%;
     padding-top: 0px;
     height: auto;
   }
-
   #mobile-img-desc {
     display: block;
   }
-
   #front-img {
     display: block;
     width: 100%;
@@ -125,5 +123,3 @@ a {
     margin: auto;
   }
 }
-
-/*# sourceMappingURL=index.css.map */
